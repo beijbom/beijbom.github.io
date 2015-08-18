@@ -1,0 +1,38 @@
+
+body {
+    background-color:#FFFDFA;
+    width:90%;
+}
+
+
+* {
+    font-family: 'verdana';
+    text-align: left;
+}
+
+p, h1{
+	margin-right:20%;
+    margin-left:20%;
+    font-weight: normal;
+}
+
+
+h1 { 
+	font-size: 2em; 
+	margin-top:50px;
+	margin-bottom:5px;
+}
+
+
+p {
+    font-size: 1.1em;
+    line-height: 140%;
+	margin-bottom:20px;
+	
+}
+
+a {
+    color: #aaCCFF;
+    text-decoration: none;
+}
+
