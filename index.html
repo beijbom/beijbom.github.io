@@ -1,8 +1,8 @@
 
 <head>
 <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../css/reset.css" />
-<link rel="stylesheet" href="beijbom_web.css" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/beijbom_web.css" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
@@ -11,23 +11,22 @@
 
 
 <div class="center">
-<a class="section-anchor" data-scroll-name="#main"></a>
+<a class="section-anchor section-anchor-top" data-scroll-name="#main"></a>
 <h1>Oscar Beijbom</h1> 
-<p class="maintext"><a href="mailto:obeijbom@eecs.berkeley.edu">obeijbom@eecs.berkeley.edu</a></p>
+<p class="abstract"><a href="mailto:obeijbom@eecs.berkeley.edu">obeijbom@eecs.berkeley.edu</a></p>
 	
 
-<p class="maintext">I'm doing a post-doc at the <a href="http://bvlc.eecs.berkeley.edu/">Berkeley Vision and Learning Center</a> on automated quantification of scientific image-data together with <a href="https://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> and <a href="http://researchers.uq.edu.au/researcher/839">Ove Hoegh-Guldberg</a>. 
+<p class="abstract">I'm doing a post-doc at the <a href="http://bvlc.eecs.berkeley.edu/">Berkeley Vision and Learning Center</a>, where I work on automated quantification of scientific image-data using deep learning.  My work is jointly supervised by <a href="https://www.eecs.berkeley.edu/~trevor/">Trevor Darrell</a> at UC Berkeley and <a href="http://researchers.uq.edu.au/researcher/839">Ove Hoegh-Guldberg</a> at University of Queensland. 
 <!--	at the <a href="http://www.gci.uq.edu.au/">Global Change Institute</a> on data analysis for the <a href="http://catlinseaviewsurvey.com/">Catlin Seaview Survey.</a></p> -->
 
 
-<p class="maintext">I studied computer science at <a href="http://vision.ucsd.edu/">UCSD</a> under <a href="http://cseweb.ucsd.edu/~kriegman/">David Kriegman</a> and <a href="http://vision.cornell.edu/se3/people/serge-belongie/">Serge Belongie</a>, and Engineering Physics at <a href="http://www.lth.se/english/">Lund University</a> under <a href="http://www2.maths.lth.se/vision/">Kalle Åström</a>.
+<p class="abstract">Before this, I studied computer vision and machine learning at <a href="http://vision.ucsd.edu/">UCSD</a> under <a href="http://cseweb.ucsd.edu/~kriegman/">David Kriegman</a> and <a href="http://vision.cornell.edu/se3/people/serge-belongie/">Serge Belongie</a>, and engineering physics at <a href="http://www.lth.se/english/">Lund University</a> under <a href="http://www2.maths.lth.se/vision/">Kalle Åström</a>.
 
 
-<p class="maintext">I was the lead developer at <a href="http://hovding.com">Hövding</a> where I created the algorithmic framework and hardware design for their <a href="http://techcrunch.com/2012/08/15/invisible-bike-helmet/">invisible bicycle helmet</a>. I have also worked on automated dietary logging systems for consumer applications and focusing algorithms for image-based cell analysis.</p>
+<p class="abstract">Outside academia, I was lead developer at <a href="http://hovding.com">Hövding</a> where I created the algorithmic framework and hardware design for their <a href="http://techcrunch.com/2012/08/15/invisible-bike-helmet/">invisible bicycle helmet</a>. I have also worked on <a href="#menu-match">automated dietary logging systems</a> for consumer applications and <a href="#cellavision">focusing algorithms</a> for image-based cell analysis.</p>
 
-<p class="maintext">Lately I have been having tons of fun developing <a href="http://coralnet.ucsd.edu">CoralNet</a>, deploying deep convolutional neural networks to help coral reef ecologists mine their image data.</p> 
- 
- 
+<p class="abstract">Lately I have been having tons of fun developing <a href="http://coralnet.ucsd.edu">CoralNet</a>, deploying deep convolutional neural networks to help coral reef ecologists mine image data.</p> 
+
 <ul class="social">
 <li class="first-item"><a href="#projects">Projects</a></li>
 <li><a href="#pubs">Publications</a></li>
@@ -35,6 +34,7 @@
 <li><a href="https://www.linkedin.com/in/oscar-beijbom-696aa6">LinkedIn</a></li>
 </ul>
 
+<p class="uparrow"></p>
 
 <a class="section-anchor" data-scroll-name="#projects"></a>
 <h2>Projects</h2>
@@ -43,28 +43,29 @@
 	<a name="coralnet"> </a>
 	<h3>Mapping the Worlds Coral Reefs</h3>
 		<p><em>UCSD, San Diego, California</em></p>	
-		<p><a href="http://coralnet.ucsd.edu"><img src="images/coralreef.jpg" alt="CoralNet" width="200" height="130"></a>With the world's coral reef in unprecedented decline, much effort is focused on research, restoration, and conservation. Towards these ends, ecological composition across large spatial and temporal scales needs to be measured. Fortunately, progress in digital imagery and underwater robotics allow for the <a href="http://catlinseaviewsurvey.com/">collection of large image corpora</a>. Unfortunately, however, subsequent manual image analysis is <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130312">prohibitively time consuming</a> creating a "manual annotation bottleneck" between collected images and tabulated data.</p>
+		<p><a href="http://coralnet.ucsd.edu"><img src="images/coralreef.jpg" alt="CoralNet" width="200" height="130"></a>With the world's coral reef in unprecedented decline, much effort is focused on research, restoration, and conservation. Towards these ends, ecological composition across large spatial and temporal scales needs to be measured. Fortunately, progress in digital imagery and underwater robotics allow for rapid <a href="http://catlinseaviewsurvey.com/">collection of large image corpora</a>. Unfortunately, however, subsequent manual image analysis is <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130312">prohibitively time consuming</a> creating a "manual annotation bottleneck" between collected images and tabulated data.</p>
 
-		<p>Addressing this bottleneck was the over-arching goal of my PhD, and culminated with the creation of <a href="coralnet.ucsd.edu">CoralNet</a>. CoralNet implements the <a href="http://vision.ucsd.edu/sites/default/files/automated_coral_annotation.pdf">computer vision methods</a> that I developed, and allows researchers, agencies, and private partners to processed their survey images in several automated and semi-automated annotation modes. The site also serves as a repository and collaboration platform for the scientific community. CoralNet users include the <a href="http://www.pifsc.noaa.gov/cred/">NOAA Coral Reef Ecosystem Program</a>, the <a href="http://www.catlinseaviewsurvey.com/">Caitlin Seaview Survey</a>, the <a href="http://www.aims.gov.au/">the <a href="http://www.aims.gov.au/">Australian Institute of Marine Science</a>, Washington State University, University of Washington, University of North Carolina, Scripps Institution of Oceanography, Colby College</a>, and <a href="http://stanford.sea.edu/">Stanford@Sea</a>. Photo credit: Catlin Seaview Survey </p>
+		<p>Addressing this bottleneck was the over-arching goal of my PhD, and culminated with the creation of <a href="coralnet.ucsd.edu">CoralNet</a>. CoralNet implements the <a href="http://vision.ucsd.edu/sites/default/files/automated_coral_annotation.pdf">computer vision methods</a> that I developed, and allows researchers, agencies, and private partners to processed their survey images in several automated and semi-automated annotation modes. The site also serves as a repository and collaboration platform for the scientific community. Current users include the <a href="http://www.pifsc.noaa.gov/cred/">NOAA Coral Reef Ecosystem Program</a>, the <a href="http://www.catlinseaviewsurvey.com/">Caitlin Seaview Survey</a>, the <a href="http://www.aims.gov.au/">the <a href="http://www.aims.gov.au/">Australian Institute of Marine Science</a>, Washington State University, University of Washington, University of North Carolina, Scripps Institution of Oceanography, Colby College</a>, and <a href="http://stanford.sea.edu/">Stanford@Sea</a>. Photo credit: Catlin Seaview Survey </p>
 
 	<h3>Learning to Count</h3>
 		<p><em>UC Berkeley, California</em></p>
 		<p><a href="http://arxiv.org/pdf/1510.04811v1.pdf"><img src="images/balls.jpg" width="200" height="150"></a>
 		Quantifying the content of a single image, or a set of images is important in many practical situation. Visual sampling surveys, for example, which is used throughout the natural sciences, require just this. With this in mind, there is surprisingly little work on this topic in computer vision, as it falls outside the standard tasks of classification, segmentation or detection.</p>
-		<p>I have looked at a few aspects of this problem. For example: how do you best integrate an automated annotation system when designing a <a href="http://arxiv.org/pdf/1410.7074v4.pdf">random sampling survey</a>; or what is the optimal way to quantify the <a href="http://arxiv.org/pdf/1510.04811v1.pdf">class-distribution</a> under <a href="http://arxiv.org/abs/1211.4860">domain-shift</a> given a finite set of images?</p>	
+		<p>I have looked at a few aspects of this problem. For example: how do you best integrate an automated annotation system when designing a <a href="http://arxiv.org/pdf/1410.7074v4.pdf">random sampling survey</a>, or what is the optimal way to quantify the <a href="http://arxiv.org/pdf/1510.04811v1.pdf">class-distribution</a> under <a href="http://arxiv.org/abs/1211.4860">domain-shift</a> given a finite set of images?</p>	
 
 
 	<h3>Classifying with Costs</h3>
 		<p><em>UCSD, San Diego, California</em></p>
 		<p><a href="http://vision.ucsd.edu/sites/default/files/guess_averse.pdf"><img src="images/tree.jpg" alt="guess_averse" width="200" height="150"></a>
-		Supervised machine learning algorithms are typically studied for cost-balanced binary classification, where the goal is to separate two equally costly (important) classes. However, in many practical situations, there are multiple classes, and in addition, misclassification costs may vary between the classes. This leads to the more challenging problem of cost-sensitive multiclass learning. </p>
+		Supervised machine learning algorithms are typically studied for cost-balanced binary classification, where the goal is to separate two equally important classes. However, in many practical situations, there are multiple classes, and in addition, misclassification costs may vary. This leads to the more challenging problem of cost-sensitive multiclass learning. </p>
 		<p>I worked with <a href="vision.caltech.edu/~sbranson">Steve Branson</a> on a structured<a href="http://vision.ucsd.edu/sites/default/files/cvpr2013_efficient_0.pdf"> Support Vector Machine</a> solver for cost-sensitive multiclass learning that converges orders of magnitudes faster than previous solvers. In another project I examined loss functions for cost-sensitive multiclass learning together with <a href="http://www.svcl.ucsd.edu/~ehsan/">Mohammad Saberian</a>, and identified a property, <a href="http://vision.ucsd.edu/sites/default/files/guess_averse.pdf">guess-averseness</a>, which has strong empirical importance.</p>
 
 
 	<h3>Counting Calories</h3>
+		<a name="menu-match"></a>
 		<p><em>Microsoft Research, Seattle, Washington, USA</em></p>
     	<p><a href="http://research.microsoft.com/menumatch/data/"> <img src="images/menu-match.jpg" alt="menu-match" width="200" height="150"></a>The World Health Organization (WHO) predicts that overweight and obesity may soon replace more traditional public health concerns such as under-nutrition and infectious diseases as the most significant cause of poor health. Logging food and calorie intake has been shown to facilitate weight management, but current food logging methods are time-consuming and cumbersome, which limits their effectiveness. </p>
-		<p>During my internship at Microsoft Research, I developed a practical method for food-logging from images. The method utilize a data-base of menu items to estimate the nutritional content of the query image.  As demonstrated on a challenging Menu-Match dataset and an existing third-party dataset, our approach outperforms previous computer vision methods. Our Menu-Match dataset of realistic restaurant meals is <a href="http://research.microsoft.com/menumatch/data/">publicly available</a>.
+		<p>During an internship at <a href="http://research.microsoft.com/en-us/">Microsoft Research</a>, I worked with <a href="http://research.microsoft.com/en-us/um/people/neel/index.html">Neel Joshi</a> and <a href="http://research.microsoft.com/en-us/um/people/dan/">Dan Morris</a>, to develop a <a href="https://www.dropbox.com/s/xk4tq94r9r3c2zm/menu-match.pdf?dl=1">practical method</a> for food-logging from images. The method utilize a data-base of menu items to estimate the nutritional content of the query image, and we demonstrate robust performance on a dataset of <a href="http://research.microsoft.com/menumatch/data/">realistic food images</a>.
 
 	
     <h3>Building An Invisible Bike Helmet</h3>
@@ -72,25 +73,21 @@
     	<p><em>Hövding AB, Malmö Sweden</em></p>
     	<p><a href="http://www.hovding.com"><img src="images/helmet_model.jpg" alt="hövding" width="200" height="300"></a> From Hövding's website: <em>"Hövding is a bicycle helmet unlike any other currently on the market. It's ergonomic, it's practical, it complies with all the safety requirements, and it's also subtle and blends in with what else you are wearing. Hövding is a collar for bicyclists, worn around the neck. The collar contains a folded up airbag that you'll only see if you happen to have an accident. The airbag is shaped like a hood, surrounding and protecting the bicyclist's head. The trigger mechanism is controlled by sensors which pick up the abnormal movements of a bicyclist in an accident. Hövding is a practical accessory that's easy to carry around, it's got a great-looking yet subtle design, and it will save your life."</em> </p>
                 
-    	<p> I was fortunate to be the first employee at Hövding. My task was to develop the accident detection system from scratch. This involved everything from selecting hardware sensors, collecting train data, setting up a computational infrastructure, defining target performances, and developing the actual algorithm. I worked with a small team of engineers on this task. </p>
+    	<p> I was fortunate to be the first employee at Hövding where my task was to develop the accident detection system from scratch. This involved everything from selecting hardware sensors, collecting train data, setting up a computational infrastructure, defining target performances, and developing the actual algorithm. I worked with a small team of engineers on this task. </p>
                 
     	<p> Hövding has been covered in thousands of video and news-releases, including stories from <a href="http://www.nbcnews.com/tech/innovation/invisible-bicycle-helmet-airbag-head-f2D11599972">NBC</a>, <a href="http://www.wired.co.uk/news/archive/2010-10/21/cyclist-collar-airbag-helmet">WIRED</a>,
 		<a href="http://voices.washingtonpost.com/dr-gridlock/2010/10/airbag_for_cyclists_unveiled.html">The Washington Post</a>, and <a href="http://www.spiegel.de/reise/deutschland/fahrradhelm-so-findet-man-sichere-und-schoene-modelle-a-897161.html">der Spiegel</a>.  Filmmaker Fredrik Gerttens <a href="https://player.vimeo.com/video/43038579">short-film</a> about Hövding have been viewed over 20 million times. Some of my other personal favorites are <a href="https://www.youtube.com/watch?v=TnmJISC1KVw">this story</a> by a Swiss independent reporter, and <a href="http://tvtotal.prosieben.de/tvtotal/videos/player/index.html?contentId=152524&initialTab=related">this one</a> by a German talk show host. Please see <a href="http://www.hovding.com/press/">Hövdings</a> press page for a complete list.</p>
 
 
 	<h3>Blood cell focus</h3>
+		<a name="cellavision"></a>
     	<p><em>Cellavision AB, Lund Sweden</em></p>
         <p><a href="http://www.cellavision.com"><img src="images/cells.jpg" alt="celsl" width="200" height="200"></a>From Cellavisions website: <em>"CellaVision develops and markets products for the health care sector, enabling fast and firm blood cell analysis and quality assurance of morphology diagnosis. The company has cutting-edge expertise within sophisticated digital image analysis, artificial intelligence and automated microscopy. For laboratories, this means increased efficiency, a simplification of the procedures and confirmed proficiency. The product line includes systems for automatic blood cell differentials and software for differential proficiency testing and education. The products are sold to hospitals and laboratories in Europe, North America and Asia."</em> </p>
                 
-        <p> I did my masters thesis at Cellavision, where I worked on a single-image focus level assessment method for blood cell images. This is in contrast with standard methods for image focusing that use multiple images together to determine focus level. The method I developed has an <a href="http://www.google.com/patents/US20100177187">international patent</a> and is currently deployed. </p>
+        <p> I did my masters thesis at Cellavision, where I worked on a single-image focus level assessment method for blood cell images. This is in contrast with standard methods for image focusing that use multiple images together to determine focus level. The method I developed has an <a href="http://www.google.com/patents/US20100177187">international patent</a> and is currently deployed in Cellavision products. </p>
            
-<p class="uparrow"><a href="#main">&#9650</a></p>
+<p class="uparrow border"><a href="#main">&#9650</a></p>
 
-
-</div>
-
-
-<div class="center">
 
 <a class="section-anchor" data-scroll-name="#pubs"></a>
 <h2>Selected publications</h2>
@@ -130,16 +127,13 @@
 	</li>
 </ul>  
 
-<p class="uparrow"><a href="#main">&#9650</a></p>
-</div>
+<p class="uparrow border"><a href="#main">&#9650</a></p>
 
-
-<div class="center">
 
 <a class="section-anchor" data-scroll-name="#press"></a>
 <h2>Press</h2>
 <ul >
-	<li >Mar 2015: Deborah Osae-Oppong highlights our <a href="http://www.jacobsschool.ucsd.edu/re/">UCSD research expo</a> poster on the UCSD Jacobs School of Engineering blog. [<a href = "http://jacobsschoolofengineering.blogspot.com/2015/03/meet-engineers-of-tomorrow-oscar-beijbom.html">www</a>]</li>
+	<li >Mar 2015: Our <a href="http://www.jacobsschool.ucsd.edu/re/">UCSD research expo</a> poster highlighted on the UCSD Jacobs School of Engineering blog. [<a href = "http://jacobsschoolofengineering.blogspot.com/2015/03/meet-engineers-of-tomorrow-oscar-beijbom.html">www</a>]</li>
 	
 	<li >Nov 2014: Jonathan Cohen at <a href="http://www.nvidia.com/content/global/global.php">NVIDIA</a> highlights <a href="projects.html#coralnet">CoralNet</a> in his talk at the SuperComputer conference. CoralNet section starts at 9.30. [<a href="http://on-demand.gputechconf.com/supercomputing/2014/video/SC411-machine-learning-computational-researchers.html">www</a>]</li>
 
@@ -154,11 +148,9 @@
 	
 	<li >May 2012: Fredrik Gerttens creates a short-film about the founders of <a href="projects.html#hovding">Hövding</a>. [<a href="https://player.vimeo.com/video/43038579">www</a>]</li> 
 </ul>
-<p class="uparrow"><a href="#main">&#9650</a></p>
+<p class="uparrow-final border"><a href="#main">&#9650</a></p>
+This website is inspired by <a href="http://www.vision.caltech.edu/welinder/">Peter Welinder</a>. Thanks Peter!
 </div>
-
-
-
 
 <script type="text/javascript">
 $("a[href^='#']").click(function(){

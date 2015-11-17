@@ -1,35 +1,25 @@
 
 body {
-    max-width:900px;
-    color:#555;
-    text-align: center;
+    color:#777;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.center {
+    max-width:600px;
+    margin: 0 auto;     
+    padding: 100px 40px 100px 40px; 
 }
 
 
-* {
-    text-align: left;
-}
-
-p, h1, h2, h3, li{
-	font-weight: normal;
-    color:gray;
-}
-
-
-h1 { color: #000;font-size:36px; font-weight: 300; margin-top:50px; margin-bottom:5px; font-family: 'Helvetica Neue';}
-h2 { color: #000;font-size:28px; font-weight: 300; margin-top:50px; margin-bottom:5px; font-family: 'Helvetica Neue';}
-h3 { color: #000;font-size:24px; font-weight: 300; margin-top:40px; margin-bottom:0px; font-family: 'Helvetica Neue';}
-
-
-p {font-size:14px; margin-bottom:20px; margin-top:5px; line-height: 140%;}
-
-
-li {font-size:14px; margin-bottom:20px; margin-top:20px; line-height: 140%;}
-
-a {color: #5694f1; text-decoration: none; font-weight: 400}
+h1 { color: #000; font-size:36px; font-weight: 300; margin-top:10px; margin-bottom:5px;}
+h2 { color: #000; font-size:28px; font-weight: 300; margin-top:50px; margin-bottom:5px;}
+h3 { color: #000; font-size:24px; font-weight: 300; margin-top:40px; margin-bottom:0px;}
+p {margin-bottom:20px; margin-top:5px; line-height: 140%;}
+li {margin-bottom:20px; margin-top:20px; line-height: 140%;}
+a {color: #5694f1; text-decoration: none}
 
 img { border:5px solid #aaa; float:left; margin-right:10px; margin-top:5px;}
 
@@ -48,7 +38,18 @@ ul.social li.first-item {
     margin-left: 0;
 }
 
-.center {margin: auto; position: center; width: 60%; padding: 10px; border-bottom: 1px solid #eee;}
-.maintext {font-size:16px; line-height: 140%; margin-bottom:20px; }
-.uparrow {text-align: right;}
+.abstract {font-size:16px; line-height: 140%; margin-bottom:20px; }
+.uparrow {text-align: right; margin-bottom:100px; margin-top:40px;}
+.uparrow-final {text-align: right; margin-top:40px;} 
+.border{border-bottom: 1px solid #eee;}
     
+.section-anchor{
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.section-anchor-top{
+    top: -100px;
+}
