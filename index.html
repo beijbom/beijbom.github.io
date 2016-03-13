@@ -43,7 +43,7 @@
 		<p><em>UCSD, San Diego, California</em></p>	
 		<p><a href="http://coralnet.ucsd.edu"><img src="images/coralreef.jpg" alt="CoralNet" width="200" height="130"></a>With the world's coral reef in unprecedented decline, much effort is focused on research, restoration, and conservation. Towards these ends, ecological composition across large spatial and temporal scales needs to be measured. Fortunately, progress in digital imagery and underwater robotics allow for rapid <a href="http://catlinseaviewsurvey.com/">collection of large image corpora</a>. Unfortunately, however, subsequent manual image analysis is <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130312">prohibitively time consuming</a> creating a "manual annotation bottleneck" between collected images and tabulated data.</p>
 
-		<p>Addressing this bottleneck was the over-arching goal of my PhD, and culminated with the creation of <a href="coralnet.ucsd.edu">CoralNet</a>. CoralNet implements the <a href="http://vision.ucsd.edu/sites/default/files/automated_coral_annotation.pdf">computer vision methods</a> that I developed, and allows researchers, agencies, and private partners to processed their survey images in several automated and semi-automated annotation modes. The site also serves as a repository and collaboration platform for the scientific community. Current users include the <a href="http://www.pifsc.noaa.gov/cred/">NOAA Coral Reef Ecosystem Program</a>, the <a href="http://www.catlinseaviewsurvey.com/">Catlin Seaview Survey</a>, the <a href="http://www.aims.gov.au/">the <a href="http://www.aims.gov.au/">Australian Institute of Marine Science</a>, Washington State University, University of Washington, University of North Carolina, Scripps Institution of Oceanography, Colby College</a>, and <a href="http://stanford.sea.edu/">Stanford@Sea</a>. Photo credit: Catlin Seaview Survey </p>
+		<p>Addressing this bottleneck was the over-arching goal of my PhD, and culminated with the creation of <a href="coralnet.ucsd.edu">CoralNet</a>. CoralNet implements the <a href="papers/cvpr2012_automated_annotation.pdf">computer vision methods</a> that I developed, and allows researchers, agencies, and private partners to processed their survey images in several automated and semi-automated annotation modes. The site also serves as a repository and collaboration platform for the scientific community. Current users include the <a href="http://www.pifsc.noaa.gov/cred/">NOAA Coral Reef Ecosystem Program</a>, the <a href="http://www.catlinseaviewsurvey.com/">Catlin Seaview Survey</a>, the <a href="http://www.aims.gov.au/">the <a href="http://www.aims.gov.au/">Australian Institute of Marine Science</a>, Washington State University, University of Washington, University of North Carolina, Scripps Institution of Oceanography, Colby College</a>, and <a href="http://stanford.sea.edu/">Stanford@Sea</a>. Photo credit: Catlin Seaview Survey </p>
 
 	<h3>Learning to Count</h3>
 		<p><em>UC Berkeley, California</em></p>
@@ -54,9 +54,9 @@
 
 	<h3>Classifying with Costs</h3>
 		<p><em>UCSD, San Diego, California</em></p>
-		<p><a href="http://vision.ucsd.edu/sites/default/files/guess_averse.pdf"><img src="images/tree.jpg" alt="guess_averse" width="200" height="150"></a>
+		<p><a href="papers/guess_averse.pdf"><img src="images/tree.jpg" alt="guess_averse" width="200" height="150"></a>
 		Supervised machine learning algorithms are typically studied for cost-balanced binary classification, where the goal is to separate two equally important classes. However, in many practical situations, there are multiple classes, and in addition, misclassification costs may vary. This leads to the more challenging problem of cost-sensitive multiclass learning. </p>
-		<p>I worked with <a href="vision.caltech.edu/~sbranson">Steve Branson</a> on a structured<a href="http://vision.ucsd.edu/sites/default/files/cvpr2013_efficient_0.pdf"> Support Vector Machine</a> solver for cost-sensitive multiclass learning that converges orders of magnitudes faster than previous solvers. In another project I examined loss functions for cost-sensitive multiclass learning together with <a href="http://www.svcl.ucsd.edu/~ehsan/">Mohammad Saberian</a>, and identified a property, <a href="http://vision.ucsd.edu/sites/default/files/guess_averse.pdf">guess-averseness</a>, which has strong empirical importance.</p>
+		<p>I worked with <a href="vision.caltech.edu/~sbranson">Steve Branson</a> on a structured<a href="papers/cvpr2013_efficient.pdf"> Support Vector Machine</a> solver for cost-sensitive multiclass learning that converges orders of magnitudes faster than previous solvers. In another project I examined loss functions for cost-sensitive multiclass learning together with <a href="http://www.svcl.ucsd.edu/~ehsan/">Mohammad Saberian</a>, and identified a property, <a href="papers/guess_averse.pdf">guess-averseness</a>, which has strong empirical importance.</p>
 
 
 	<h3>Counting Calories</h3>
@@ -91,37 +91,43 @@
 <h2>Selected publications</h2>
 <p> Full list of publications is available at <a href="http://scholar.google.com/citations?user=XP_Hxm4AAAAJ&hl=en">Google Scholar profile</a></p>
 <ul>
+	<li>O. Beijbom et al. <i>"Improving Automated Annotation of Benthic Survey Images Using Wide-band Fluorescence"</i>. Scientific Reports, 2016.
+	</li>
+	<li>G. Yang, O. Beijbom, N. Zhang, T. Darrell. <i>"Compact Bilinear Pooling"</i>. CVPR, 2016.
+		[<a href="http://arxiv.org/abs/1511.06062"]>preprint</a>]
+	</li>
 	<li>O. Beijbom et al. <i>"Towards automated annotation of benthic survey images: Variability of human experts and operational modes of automation"</i>. PLoS One, 2015.
-		[<a href="https://www.dropbox.com/s/upy5kkl4qxla036/ios_plos2015.pdf?dl=1"]>pdf</a>]
+		[<a href="papers/ios_plos2015.pdf"]>pdf</a>]
 		[<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0130312">www</a>]
 		[<a href="http://datadryad.org/resource/doi:10.5061/dryad.m5pr3">data</a>]
 	</li>	
 
     <li >O. Beijbom, N. Joshi, D. Morris, S. Saponas, S. Khullar. <i>"Menu-Match: Restaurant-Specific Food Logging from Images"</i>. Winter Conference on Applications of Computer Vision (WACV), 2015. 
-		[<a href="https://www.dropbox.com/s/xk4tq94r9r3c2zm/menu-match.pdf?dl=0">paper</a>]
+		[<a href="papers/menu-match.pdf">paper</a>]
 		[<a href="http://research.microsoft.com/menumatch/data/">data</a>]
 		[<a href="http://research.microsoft.com/menumatch/">www</a>]
 	</li>
 
 	<li >O. Beijbom<sup>*</sup>, M. Saberian<sup>*</sup>, N. Vasconcelos, D. Kriegman. <i>"Guess Averse Loss Functions for Cost-Sensitive Multiclass Boosting"</i>. International Conference on Machine Learning (ICML), Beijing, June 2014. <sup>*</sup>equal contribution. 
-		[<a href="http://vision.ucsd.edu/sites/default/files/guess_averse.pdf">paper</a>] 
-        [<a href="http://vision.ucsd.edu/sites/default/files/guess_averse_supplementary_0.pdf">supp. info</a>] 
-        [<a href="https://www.dropbox.com/s/v5q7rrbwf4bc50i/guess_averse_icml_talk_beijbom.pptx">talk (ppt)</a>]
-        [<a href="http://techtalks.tv/talks/guess-averse-loss-functions-for-cost-sensitive-multiclass-boosting/60880/">talk (video)</a>] 
-        [<a href="https://www.dropbox.com/s/liv681yzcaw5hnb/guess_averse_poster.pptx">poster</a>] 
-        [<a href="http://vision.ucsd.edu/~beijbom/files/ICML_2014_guess_averse_code_data.zip">code</a>]
+		[<a href="papers/guess_averse.pdf">paper</a>] 
+        [<a href="papers/guess_averse_supplementary.pdf">supp. info</a>] 
+        [talk: <a href="talks/guess_averse_icml_talk_beijbom.pptx">slides</a>
+        <a href="http://techtalks.tv/talks/guess-averse-loss-functions-for-cost-sensitive-multiclass-boosting/60880/">video</a>] 
+        [<a href="talks/guess_averse_poster.pptx">poster</a>] 
+        [<a href="code/guess_averse_code.zip">code</a>]
     </li>
 
     <li >S. Branson, O. Beijbom, S. Belongie. <i> "Efficient Large-Scale Structured Learning"</i>. IEEE Conference on Computer Vision (CVPR), Portland, Oregon, June 2013.
-		[<a href="http://vision.ucsd.edu/sites/default/files/cvpr2013_efficient_0.pdf">paper</a>]
-		[<a href="http://vision.caltech.edu/~sbranson/files/branson2013efficient.pptx">talk (ppt)</a>]
-		[<a href="http://techtalks.tv/talks/efficient-large-scale-structured-learning/58645/">talk (video)</a>]
-		[<a href="http://vision.caltech.edu/~sbranson/code/index.html#learning">code</a>]
+		[<a href="papers/cvpr2013_efficient.pdf">paper</a>]
+		[talk: <a href="talks/branson2013efficient.pptx">slides</a>
+		<a href="http://techtalks.tv/talks/efficient-large-scale-structured-learning/58645/">video</a>]
+		[<a href="http://vision.caltech.edu/~sbranson/code/index.html">code</a>]
 	</li>
 
 	<li >O. Beijbom, P.J.Edmunds, D.I.Kline, B.G.Mitchell, D.Kriegman. <i>"Automated Annotation of Coral Reef Survey Images"</i>. IEEE Conference on Computer Vision (CVPR), Providence, Rhode Island, June 2012.
-		[<a href="http://vision.ucsd.edu/sites/default/files/automated_coral_annotation.pdf">paper</a>]
+		[<a href="papers/cvpr2012_automated_annotation.pdf">paper</a>]
 		[<a href="http://vision.ucsd.edu/content/moorea-labeled-corals">data</a>]
+		[<a href="code/cvpr2012_automated_annotation_devkit.zip">code</a>]
 	</li>
 </ul>  
 
@@ -131,6 +137,8 @@
 <a class="section-anchor" data-scroll-name="#press"></a>
 <h2>Press</h2>
 <ul >
+	<li>Jan 2015: I'm running the <a href="https://sites.google.com/site/ucbcs29443/">UC Berkeley computer vision reading group</a>, and editing the <a href="https://theberkeleyview.wordpress.com/">paper review blog</a>.</li>
+	
 	<li >Mar 2015: Our <a href="http://www.jacobsschool.ucsd.edu/re/">UCSD research expo</a> poster highlighted on the UCSD Jacobs School of Engineering blog. [<a href = "http://jacobsschoolofengineering.blogspot.com/2015/03/meet-engineers-of-tomorrow-oscar-beijbom.html">www</a>]</li>
 	
 	<li >Nov 2014: Jonathan Cohen at <a href="http://www.nvidia.com/content/global/global.php">NVIDIA</a> highlights <a href="projects.html#coralnet">CoralNet</a> in his talk at the SuperComputer conference. CoralNet section starts at 9.30. [<a href="http://on-demand.gputechconf.com/supercomputing/2014/video/SC411-machine-learning-computational-researchers.html">www</a>]</li>
@@ -165,7 +173,7 @@
 	<h3>Moorea Labeled Corals</h3>
 		<p class="margin_bottom margin_top"><a href="http://vision.ucsd.edu/content/moorea-labeled-corals"><img src="images/MLC_frontfig.jpg" alt="" width="180" height="180"></a>The Moorea Labeled Corals dataset is a subset of the Moorea Coral Reef-Long Term Ecological Research (MCR-LTER) dataset packaged for Computer Vision research. It contains over 400.000 human expert annotations on 2055 coral reef survey images from the island of Moorea in French Polynesia. Each image has 200 expert random point annotations, indicating the substrate underneath each point.</p>
 
-		<p class="margin_bottom">The MLC dataset was published at <a href="http://vision.ucsd.edu/sites/default/files/automated_coral_annotation.pdf">CVPR 2012</a>.
+		<p class="margin_bottom">The MLC dataset was published at <a href="papers/cvpr2012_automated_annotation.pdf">CVPR 2012</a>.
 		
 
 <p class="uparrow-final border"><a href="#main">&#9650</a></p>
