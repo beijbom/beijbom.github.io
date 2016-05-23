@@ -1,0 +1,28 @@
+<head>
+<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/beijbom_web.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body class="show" id="pages">
+
+<div class="center">
+<a class="section-anchor section-anchor-top" data-scroll-name="#main"></a>
+<h1>Moorea Labeled Corals</h1>
+
+<p></p>
+<p><img src="mlc/frontpage.jpg" alt="celsl" width="300">
+
+<p class="abstract">The Moorea Labeled Corals dataset is a subset of the Moorea Coral Reef-Long Term Ecological Research (MCR-LTER) dataset packaged for Computer Vision research. It contains over 400.000 human expert annotations on 2055 coral reef survey images from the island of Moorea in French Polynesia. Each image has 200 expert random point annotations, indicating the substrate underneath each point. </p>
+
+
+<p class="abstract">The Moorea Labeled Corals was introduced by Beijbom et.al. in CVPR 2012, <a href="papers/cvpr2012_automated_annotation.pdf">Automated Annotation of Coral Reef Survey Images</a>. The data itself is available for downloaded from the <a href="http://mcr.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-mcr.5006">Moorea Coral Reef Long Term Ecological Research (MCR-LTER)</a> website.</p>
+
+<p class="abstract">Each image in the MLC dataset has 200 random points overlaid, each annotated with one of 9 classes, 5 coral genera and 4 non-coral classes. Sample images can be viewed <a href="mlc/sample_images/index.html">here</a> and sample patches from each of the nine categories here: <a href="mlc/patches/Acrop/index.html">Acropora</a>, <a href="mlc/patches/Pocill/index.html">Pocillopora</a>, <a href="mlc/patches/Porit/index.html">Porites</a>, <a href="mlc/patches/Pavon/index.html">Pavona</a>, <a href="mlc/patches/Monti/index.html">Montipora</a>, <a href="mlc/patches/Macro/index.html">Macro</a>, <a href="mlc/patches/CCA/index.html">CCA</a>, <a href="mlc/patches/Turf/index.html">Turf</a>, <a href="mlc/patches/Sand/index.html">Sand</a>. Metadata on the ecological sampling methodology can be found <a href="http://mcr.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-mcr.5006&displaymodule=methodsall">here</a>. </p>
+
+
+<p class="abstract">A MATLAB <a href="mlc/devkit1.1.zip">software development kit</a> is provided to replicate the experiments in the paper. There is also a pre-defined a cost-matrix for MLC which assigns higher costs to classification errors across functional groups, and it's given in the <a href= "papers/guess_averse_supplementary.pdf">supplementary material</a> of <a href = "papers/guess_averse.pdf">this paper</a>. </p>
+
+
+<p class="abstract">We kindly ask that you cite <a href = "mlc/citation.bib">this paper</a> in any results utilizing the data.</p>

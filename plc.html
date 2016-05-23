@@ -1,0 +1,31 @@
+<head>
+<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/beijbom_web.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body class="show" id="pages">
+
+<div class="center">
+<a class="section-anchor section-anchor-top" data-scroll-name="#main"></a>
+<h1>Pacific Labeled Corals</h1>
+
+<p></p>
+<p><img src="plc/frontpage.jpg" alt="celsl" width="300">
+
+
+<p class="abstract">Pacific Labeled Corals is an aggregate dataset containing 5090 coral reef survey images from four Pacific monitoring projects in Moorea (French Polynesia), the northern Line Islands, Nanwan Bay (Taiwan) and Heron Reef (Australia). Pacific Labeled Corals contain a total of 251,988 expert annotations across 4 pacific reef locations, and can be used as a benchmark dataset for evaluating object recognition methods and texture descriptors as well as for domain transfer learning research. The images have all been annotated using a random point annotation tool by a coral reef expert. In addition, 200 images from each location have been cross-annotatoed by 6 experts, for a total of 7 sets of annotations for each image.</p>
+
+
+<p class="abstract">A table with summary statistics about the 4 locations are provided <a href="plc/datasettable.pdf">here</a> and sample images <a href="plc/sample_images_large.pdf">here</a>. All images are annotated using a 20 class <a href="plc/labelmap.txt">label set</a>. This include 8 coral genera and one 'other hard coral' label. </p>
+
+<p class="abstract">The data from each location is split into two sets, Evaluation and Reference. </p>
+
+<p class="abstract"><strong>The Evaluation sets</strong> each have 200 images with 10 random points per image. These are annotated with 7 sets of annotations. "Archived": the annotation assigned during the original ecological survey; "Host": the re-annotation by the same coral expert; "Visitor1-5": annotations by 5 coral expert not familiar with the local ecology. See <a href = "plc/annsample_eval.txt">this file</a> for a sample Evaluation Set annotation file. The integer 'imageid' value is mapped to an image file through an <a href = "plc/imagemap.txt">imagemap file</a>, and the integer values for the various annotators are mapped to labels through the <a href="plc/labelmap.txt">label set</a> file. </p>
+
+<p class="abstract"><strong>The Reference sets</strong> contain the remaining images (between 471 and 2,597 image files with 24-200 annotations per images depending on the dataset). These only contain the Archived annotations. See <a href="plc/annsample_ref.txt">this file</a> for a sample Reference Set annotation file.
+
+<p class="abstract">Compressed archived from Line Islands, Nanwan Bay and Heron Reef are availble for download from the <a href="http://datadryad.org/resource/doi:10.5061/dryad.m5pr3">Dryad data repository, doi:10.5061/dryad.m5pr3</a>. The data from Moorea can be downloaded from the <a href="http://mcr.lternet.edu/cgi-bin/showDataset.cgi?docid=knb-lter-mcr.5013">Moorea Coral Reef Long Term Ecological Research (MCR-LTER) website</a>.</p>
+
+<p class="abstract">We kindly ask that you cite <a href = "plc/citation.bib">this paper</a> in any results utilizing the data.</p>
