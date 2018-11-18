@@ -3,7 +3,7 @@ body {
     color:#777;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-size: 14px;
+    font-size: 13px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -48,7 +48,7 @@ ul.social li.first-item {
 .margin_top {margin-top:15px;}
 .margin_bottom {margin-bottom:30px;}
 .uparrow-final {text-align: right; margin-top:40px;} 
-.border{border-bottom: 1px solid #eee;}
+.border {border-bottom: 1px solid #eee;}
     
 .section-anchor{
     display: block;
